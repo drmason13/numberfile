@@ -6,12 +6,12 @@ A simple Application for numbering files to order them.
 
 > These are planned features. They are checked once complete.
 
-* [ ] prefix all files in the current directory with a number.
+* [x] prefix all files in the current directory with a number.
 ```sh
 numberfile
 ```
 
-* [ ] prefix all files at the given path, a folder or glob path.
+* [~] prefix all files at the given path, a folder or glob path - glob paths not ready yet.
 ```sh
 # all markdown files in the book directory in the current folder
 numberfile book/*.md
@@ -27,7 +27,7 @@ numberfile books/*/
 numberfile -f 'Chapter {}'
 ```
 
-* [ ] use a custom delimiter, the default is a hyphen `-`.
+* [x] use a custom delimiter, the default is a hyphen `-`.
 ```sh
 # use a space instead, i.e. "01 filename"
 numberfile -d ' '
@@ -79,7 +79,7 @@ numberfile -p 3
 
 ## Details
 
-* [ ] Aims to be cross platform but I have not tested on a Mac.
+* [~] Aims to be cross platform but I have not tested on a Mac.
 
 * [ ] Tries to be smart and not "double" prefix filenames.
 
